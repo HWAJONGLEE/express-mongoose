@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/HWAJONGLEE/node-hello#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mongodb": "^4.4.0",
+    "properties-reader": "^2.2.0"
   }
 }
