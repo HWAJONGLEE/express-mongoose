@@ -1,10 +1,9 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const properties = require('./properties');
 
-const MONGO_URI = properties.getMongoURI();
-const dbURI = MONGO_URI + '/basemongo?retryWrites=true&w=majority';
+const MONGO_URI = properties.getMongoURI() + '/basemongo?retryWrites=true&w=majority';
 
-const client = new MongoClient(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+const client = new MongoClient(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 client.connect(err => {
   if (err) throw err;

@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npx nodemon app",
-    "serve:comment" : "npm serve 입력 하면 serve에 밸류가 커멘드에 입력 됨 nodemon이 app.js를 바라보게 함"
+    "serve:comment": "npm serve 입력 하면 serve에 밸류가 커멘드에 입력 됨 nodemon이 app.js를 바라보게 함"
   },
   "repository": {
     "type": "git",
@@ -23,6 +22,8 @@
   "dependencies": {
     "express": "^4.17.3",
     "mongodb": "^4.4.0",
+    "mongoose": "^6.2.3",
+    "morgan": "^1.10.0",
     "properties-reader": "^2.2.0"
   },
   "devDependencies": {
